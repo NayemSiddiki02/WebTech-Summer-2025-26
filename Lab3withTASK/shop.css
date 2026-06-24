@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    font-family: 'Cambria', sans-serif;
+    font-size: 36px;
+}
+
+body {
+    font-family: 'Cambria', sans-serif;
+}
+
+h2 {
+    text-align: left;
+    font-family: 'Cambria', sans-serif;
+}
+
+p {
+    text-align: left;
+    font-family: 'Cambria', sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Cambria', sans-serif;
+}
+
+table, th, td {
+    text-align: left;
+    font-family: 'Cambria', sans-serif;
+}
+
+.product-table th {
+    background-color: #002060;
+    color: white;
+}
+
+.product-table td {
+    background-color: #cce0ff;
+    font-family: 'Cambria', sans-serif;
+}
+
+.table-box {
+    background-color: #86c625;
+    border: 2px solid #206702;
+    border-radius: 10px;
+    padding: 12px;
+    max-width: 520px;
+    margin: 20px auto;
+}
+
+.table-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table {
+    width: calc(100% - 32px);
+    margin: 0 16px;
+    border-collapse: collapse;
+}
