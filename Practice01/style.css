@@ -1,0 +1,39 @@
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+strong {
+  color: rgb(255, 0, 0);
+  font-family: arial;
+}
+
+#dhakabd {
+  color: rgb(234, 255, 0);
+  font-family: Trebuchet MS, sans-serif;
+}
+
+.bdwant{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 255);
+    text-align: left;
+    font-style: italic;
+}
+
+#flowerTable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#flowerTable th, #flowerTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+#flowerTable th {
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
