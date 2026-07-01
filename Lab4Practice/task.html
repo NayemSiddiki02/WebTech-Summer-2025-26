@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+    <title>Log In</title>
+</head>
+
+<form onsubmit="return checkLogin();">
+<body>
+    <h1>Register</h1>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><p style="color: red;" id="nameError"></p></td>
+        </tr>
+
+
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><p style="color: red;" id="emailError"></p></td>
+        </tr>
+
+
+        <tr>
+            <td> Set Password:</td>
+            <td><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><p style="color: red;" id="passwordError"></p></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Register"></td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
