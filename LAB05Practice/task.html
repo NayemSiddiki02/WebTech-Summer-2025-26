@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form onkeyup="calculatePayableAmount()">
+        <fieldset>
+            <legend>Product buy</legend>        
+            <table>
+                <tr>
+                    <td>Product name:</td>
+                    <td><input type="text" id="productName" name="productName" value="ASUS VivoBook" disabled></td>
+                </tr>
+                <tr>
+                    <td>Price:</td>
+                    <td><input type="text" id="productPrice" name="productPrice" value="123000" readonly></td>
+                </tr>
+                <tr>
+                    <td>Quantity:</td>
+                    <td><input type="number" id="productQuantity" name="productQuantity" min="1"></td>
+                    <td><p id="quantityErr"></p></td>
+                </tr>
+                <tr>
+                    <td>Payable Amount:</td>
+                    <td>
+                        <input type="text" id="payableAmount" name="payableAmount" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="button" id="totalAmountBtn" style="display:none;"">Total Amount</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
