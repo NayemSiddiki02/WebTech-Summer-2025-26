@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <p>Fill the following form carefully</p>
+
+    <div id="formContainer">
+        <form onsubmit="validateForm(event)">
+            <table>
+                <tr>
+                    <td><label for="fname">First Name:<span class="required">*</span></label></td>
+                    <td><input type="text" id="fname" name="fname"></td>
+                    <td id="fnameError" class="error"></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name:<span class="required">*</span></label></td>
+                    <td><input type="text" id="lname" name="lname"></td>
+                    <td id="lnameError" class="error"></td>
+                </tr>
+                <tr>
+                    <td><label for="stid">Student ID:<span class="required">*</span></label></td>
+                    <td><input type="text" id="stid" name="stid" ></td>
+                    <td id="stidError" class="error"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:<span class="required">*</span></label></td>
+                    <td><input type="email" id="email" name="email" ></td>
+                    <td id="emailError" class="error"></td>
+                </tr>
+                <tr>
+                    <td><label for="crc">Credit Completed:<span class="required">*</span></label></td>
+                    <td><input type="number" id="crc" name="crc" min="0"></td>
+                    <td id="crcError" class="error"></td>
+                </tr>
+                <tr>
+                    <td><label for="department">Department:<span class="required">*</span></label></td>
+                    <td>
+                        <select id="department" name="department">
+                            <option value="">Select Department</option>
+                            <option value="cse">CSE</option>
+                            <option value="eee">EEE</option>
+                            <option value="coe">CoE</option>
+                            <option value="ipe">IPE</option>
+                            <option value="bba">BBA</option>
+                            <option value="eng">English</option>
+                        </select>
+                    </td>
+                    <td id="departmentError" class="error"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="button" onclick="validateForm()">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <h2>Registered Student List</h2>
+
+    <div id="studentList">
+        <table id="studentTable">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Student ID</th>
+                <th>Email</th>
+                <th>Credit Completed</th>
+                <th>Department</th>
+            </tr>
+            <tbody id="studentTableBody"></tbody>
+        </table>
+    </div>
+</body>
+</html>
